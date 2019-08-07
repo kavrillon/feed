@@ -21,5 +21,7 @@ module.exports = {
     "ts-jest": {
       babelConfig: true
     }
-  }
+  },
+  collectCoverage: true,
+  collectCoverageFrom: ["src/**/*.{ts,vue}", "!src/main.ts"]
 };
