@@ -7,6 +7,8 @@ import initState from "./store/state";
 import { mutations } from "./store/mutations";
 import { actions } from "./store/actions";
 
+import "@/assets/scss/global.scss";
+
 Vue.config.productionTip = false;
 
 Vue.use(Vuex);

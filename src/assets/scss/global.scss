@@ -1,0 +1,25 @@
+/**
+ * Styles registered globally: ONLY GLOBAL STYLES
+*/
+
+@import './import.scss';
+@import './_theme.scss';
+
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  height: 100%;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+}
+
+body {
+  @include themed;
+
+  background: var(--color-bg);
+  color: var(--color-text);
+}
